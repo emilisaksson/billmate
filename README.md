@@ -14,24 +14,25 @@ TODO
 ## Examples
 
 Require the module:
-...
+```
     let Billmate = require('billmate');
-...
+```
 
 Initialize the module with your Store ID and secret key:
-...
+```
     let billmate = new Billmate('12345', '1234567890');
-...
+```
 
 To target the test environment:
-...
+```
     let billmate = new Billmate('12345', '1234567890', { test: true });
-...
+```
 
 
 ### Functions
 
 #### getAddress
+Get Address data for a person or organization.
 
 ```
     billmate.getAddress('550101-1018').then(response => {
@@ -54,6 +55,7 @@ To target the test environment:
 ```
 
 #### getPaymentinfo
+Get info about a payment.
 
 ```
     billmate.getPaymentinfo('1077').then(response => {
@@ -64,6 +66,7 @@ To target the test environment:
 ```
 
 #### getPaymentplans
+Used for fetching part payment plans.
 
 ```
     billmate.getPaymentplans('SEK', 'SE', 'sv').then(response => {
@@ -74,6 +77,7 @@ To target the test environment:
 ```
 
 #### getTerms
+Used for fetching the Billmate payment terms.
 
 ```
     billmate.getTerms(1, 231700).then(html => {
@@ -84,6 +88,7 @@ To target the test environment:
 ```
 
 #### addPayment
+Used for creating payments.
 
 ```
     let data = { ... };
@@ -95,6 +100,7 @@ To target the test environment:
 ```
 
 #### cancelPayment
+Used to cancel a created payment.
 
 ```
     billmate.cancelPayment(1077).then(response => {
@@ -105,6 +111,7 @@ To target the test environment:
 ```
 
 #### updatePayment
+Used for updating an existing payment.
 
 ```
     let data = { ... };
@@ -116,6 +123,7 @@ To target the test environment:
 ```
 
 #### creditPayment
+Used for crediting payments. The original payment can be credited fully or partially.
 
 ```
     billmate.creditPayment(1077).then(response => {
@@ -131,9 +139,8 @@ To target the test environment:
 
 * **Emil Isaksson** - *Creator* - [emilisaksson](https://github.com/emilisaksson)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License - see the [LICENSE.md](LICENSE.md) file for details
 
