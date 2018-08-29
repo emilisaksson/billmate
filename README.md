@@ -8,7 +8,9 @@ Read the [Billmate API documentation](http://developer.billmate.se) and [contact
 
 ### Installing
 
-TODO
+```
+    npm install billmate
+```
 
 
 ## Examples
