@@ -31,9 +31,9 @@ To target the test environment:
 ```
 
 
-### Functions
+## Functions
 
-#### getAddress
+### getAddress
 Get Address data for a person or organization.
 
 ```
@@ -56,29 +56,29 @@ Get Address data for a person or organization.
     });
 ```
 
-#### getPaymentinfo
+### getPaymentinfo
 Get info about a payment.
 
 ```
     billmate.getPaymentinfo('1077').then(response => {
-         // See Billmate documentation for return data          
+         // Do stuff         
     }).catch(error => {
         // Handle error
     });
 ```
 
-#### getPaymentplans
+### getPaymentplans
 Used for fetching part payment plans.
 
 ```
     billmate.getPaymentplans('SEK', 'SE', 'sv').then(response => {
-         // See Billmate documentation for return data          
+         // Do stuff      
     }).catch(error => {
         // Handle error
     });
 ```
 
-#### getTerms
+### getTerms
 Used for fetching the Billmate payment terms.
 
 ```
@@ -89,47 +89,47 @@ Used for fetching the Billmate payment terms.
     });
 ```
 
-#### addPayment
+### addPayment
 Used for creating payments.
 
 ```
     let data = { ... };
     billmate.addPayment(data).then(response => {
-         // See Billmate documentation for return data     
+         // Do stuff   
     }).catch(error => {
         // Handle error
     });
 ```
 
-#### cancelPayment
+### cancelPayment
 Used to cancel a created payment.
 
 ```
     billmate.cancelPayment(1077).then(response => {
-         // See Billmate documentation for return data     
+         // Do stuff   
     }).catch(error => {
         // Handle error
     });
 ```
 
-#### updatePayment
+### updatePayment
 Used for updating an existing payment.
 
 ```
     let data = { ... };
     billmate.updatePayment(data).then(response => {
-         // See Billmate documentation for return data     
+         // Do stuff      
     }).catch(error => {
         // Handle error
     });
 ```
 
-#### creditPayment
+### creditPayment
 Used for crediting payments. The original payment can be credited fully or partially.
 
 ```
     billmate.creditPayment(1077).then(response => {
-         // See Billmate documentation for return data     
+         // Do stuff   
     }).catch(error => {
         // Handle error
     });
