@@ -1,0 +1,25 @@
+{
+  "name": "billmate",
+  "version": "0.1.0",
+  "description": "A Billmate module for Node.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "billmate",
+    "payment",
+    "api",
+    "payment",
+    "gateway"
+  ],
+  "author": "Emil Isaksson <emil@ka50.se> (https://ka50.se)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilisaksson/billmate"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
