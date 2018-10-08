@@ -21,6 +21,7 @@ module.exports = function (id, secret, config) {
     this.updatePayment = require('./functions/update-payment')(completeConfig);
     this.activatePayment = require('./functions/activate-payment')(completeConfig);
     this.creditPayment = require('./functions/credit-payment')(completeConfig);
+    this.initCheckout = require('./functions/init-checkout')(completeConfig);
 
 }
 

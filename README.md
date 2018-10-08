@@ -135,6 +135,18 @@ Used for crediting payments. The original payment can be credited fully or parti
     });
 ```
 
+### initCheckout
+Used for initiating a checkout payment.
+
+```
+    let data = { ... };
+    billmate.creditPayment(data).then(response => {
+         // Do stuff   
+    }).catch(error => {
+        // Handle error
+    });
+```
+
 
 
 ## Authors
