@@ -1,6 +1,6 @@
 {
   "name": "billmate",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Billmate module for Node.js.",
   "main": "index.js",
   "scripts": {
