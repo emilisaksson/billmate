@@ -26,7 +26,6 @@ let getPayload = (functionName, data, config) => {
             version: BILLMATE_VERSION,
             hash: hash(config.key, data)
         },
-        CheckoutData: config.CheckoutData,
         data: data,
         function: functionName
     }
