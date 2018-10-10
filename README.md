@@ -140,7 +140,7 @@ Used for initiating a checkout payment.
 
 ```
     let data = { ... };
-    billmate.creditPayment(data).then(response => {
+    billmate.initCheckout(data).then(response => {
          // Do stuff   
     }).catch(error => {
         // Handle error
