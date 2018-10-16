@@ -124,6 +124,17 @@ Used for updating an existing payment.
     });
 ```
 
+### activatePayment
+Used for activate a payment created with autoactivate=0.
+
+```
+    billmate.updatePayment(1000235).then(response => {
+         // Do stuff      
+    }).catch(error => {
+        // Handle error
+    });
+```
+
 ### creditPayment
 Used for crediting payments. The original payment can be credited fully or partially.
 
