@@ -23,6 +23,27 @@ module.exports = function (id, secret, config) {
     this.creditPayment = require('./functions/credit-payment')(completeConfig);
     this.initCheckout = require('./functions/init-checkout')(completeConfig);
 
+
+    // Enums
+    this.paymentMethods = {
+        INVOICE_FACTORING: 1,
+        INVOICE_SERVICE: 2,
+        INVOICE_PART_PAYMENT: 4,
+        CARD: 8,
+        BANK: 16,
+        CARD_BANK:24,
+        CASH: 32
+    }
+
+    this.currency = {
+        SEK: 'SEK', 
+        DKK: 'DKK', 
+        NOK: 'NOK', 
+        GBP: 'GBP', 
+        EUR: 'EUR', 
+        USD: 'USD'
+    }
+
 }
 
 
