@@ -31,16 +31,17 @@ module.exports = function (id, secret, config) {
         INVOICE_PART_PAYMENT: 4,
         CARD: 8,
         BANK: 16,
-        CARD_BANK:24,
-        CASH: 32
+        CARD_BANK: 24,
+        CASH: 32,
+        SWISH: 1024
     }
 
     this.currency = {
-        SEK: 'SEK', 
-        DKK: 'DKK', 
-        NOK: 'NOK', 
-        GBP: 'GBP', 
-        EUR: 'EUR', 
+        SEK: 'SEK',
+        DKK: 'DKK',
+        NOK: 'NOK',
+        GBP: 'GBP',
+        EUR: 'EUR',
         USD: 'USD'
     }
 
